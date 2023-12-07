@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food and Health UI</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Column 1 - Side Buttons and Tooltips -->
+      <div class="col-sm-12 col-md-3 button-container bg-light">
+        <h4>This week's thoughts ...</h4>
+
+        <button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="right" title="Drink Fluids"
+          data-bs-content="Drinking clear fluids helps your kidneys, liver and heart.">
+          <span><i class="bi bi-cup-straw"></i></span>
+          <span style="margin-left: 10px">Hydration</span>
+        </button>
+
+        <button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="right" title="Caffeine"
+          data-bs-content="Caffeine raises your heart rate and causes headaches and dehydration.">
+          <span><i class="bi bi-coffee"></i></span>
+          <span style="margin-left: 10px">Caffeine</span>
+        </button>
+
+        <button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="right" title="Health"
+          data-bs-content="Feeling good is all about how you treat your body.">
+          <span><i class="bi bi-heart-fill"></i></span>
+          <span style="margin-left: 10px">Health</span>
+        </button>
+
+        <button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-placement="right" title="Sleep"
+          data-bs-content="A good night’s sleep is essential for good health.">
+          <span><i class="bi bi-moon-stars-fill"></i></span>
+          <span style="margin-left: 10px">Sleep</span>
+        </button>
+
+        <button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="right" title="Activity"
+        data-bs-content="Exercise Burn calories and add muscle mass with activity.">
+  <span><i class="bi bi-activity"></i></span>
+  <span style="margin-left: 10px">Activity</span>
+</button>
+
+
+        <div class="tooltip-area">
+          <span data-bs-toggle="tooltip" data-bs-placement="top" title="Cook book">
+            <img src="cookbook.jpg" style="width: 100px;height: 100px" />
+          </span>
+          
+        </div>
+
+        <form>
+            <label for="e-mail" class="form-label">E-Mail Address</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="anniestudent@iu.edu" />
+              <span class="input-group-text text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="enter your e-mail">
+                <i class="bi bi-question-circle"></i>
+              </span>
+            </div>
+            <!-- Add the submit button below the email input -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+      </div>
+
+      <!-- Column 2 - Carousel and Popovers -->
+      <div class="col col-sm-10 col-md-4 carousel-area bg-body bg-gradient">
+        <div id="course_carousel" class="carousel carousel-light" data-bs-ride="carousel" data-bs-interval="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="marsala.jpeg" alt="Chicken Marsala" />
+              <div class="carousel-caption">
+                <h2>Chicken Marsala</h2>
+                <p>Old French Classic Dish</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="piccata.jpeg" alt="Chicken Piccata" />
+              <div class="carousel-caption">
+                <h2>Chicken Piccata</h2>
+                <p>Saute the chicken in olive oil, add capers and sprinkle on paprika</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="bolognese.jpeg" alt="Bolognese" />
+              <div class="carousel-caption">
+                <h2>Bolognese</h2>
+                <p>Traditional Italian Meat Sauce</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="shrimpscampi.jpeg" alt="Shrimp Scampi" />
+              <div class="carousel-caption">
+                <h2>Shrimp Scampi</h2>
+                <p>Delicious Garlic Butter Shrimp</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#course_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#course_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#course_carousel" data-bs-slide-to="3"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 - Accordion -->
+      <div class="col col-sm-12 col-lg-4 accordion-area bg-light">
+        <div class="accordion" id="accordionRecipes">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Chicken Marsala
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="Chicken Marsala"
+              data-bs-parent="#accordionRecipes">
+              <div class="accordion-body">
+                Marinade chicken in sweet white wine. Butterfly chicken in olive oil, saute until golden brown. Add sliced
+                mushrooms and drizzle white wine on top.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Chicken Piccata
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Chicken Piccata"
+              data-bs-parent="#accordionRecipes">
+              <div class="accordion-body">
+                Chicken Piccata in sweet white wine. Butterfly chicken in olive oil, saute until golden brown. Add sliced
+                mushrooms and drizzle white wine on top.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Shrimp Scampi
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="Shrimp Scampi"
+              data-bs-parent="#accordionRecipes">
+              <div class="accordion-body">
+                Shrimp Scampi in sweet white wine. Butterfly chicken in olive oil, saute until golden brown. Add sliced
+                mushrooms and drizzle white wine on top.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Bolognese
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="Bolognese"
+              data-bs-parent="#accordionRecipes">
+              <div class="accordion-body">
+                Bolognese in sweet white wine. Butterfly chicken in olive oil, saute until golden brown. Add sliced
+                mushrooms and drizzle white wine on top.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"
+  integrity="your-integrity-hash"
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="your-integrity-hash"
+  crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script src="enabler.js" defer></script>
+
+</body>
+
+</html>
